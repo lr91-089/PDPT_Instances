@@ -1,0 +1,19 @@
+The instance descriptions follows the logic introduced by: Lyu, Z., & Yu, A. J. (2023). The pickup and delivery problem with transshipments: Critical review of two existing models and a new formulation. European Journal of Operational Research, 305(1), 260–270. https://doi.org/10.1016/j.ejor.2022.05.053
+
+Instance parameters:
+
+transportation requests (nr)
+vehicle number (nv)
+transfer Station number (nt)
+Capacity parameter is unused (capacity)
+
+Node structure:
+Each of the requests consists of a pickup node (pX) and delivery node (dX) with:
+
+x, y: coordinates in a 2D plane
+a, b: time window [earliest, latest] for service
+load: quantity to pick up (positive) or deliver (negative)
+s: service time required at the node
+vcap: hetereogeneous vehicle capacity (for each Depot node) unused for request nodes (set to 0)
+
+We use the euclidean distance for the travel times and Costs. Note that GhilasA uses 0.5 c_ij for the cost Parameters. GhilasA limits each outgoing arc to 1 for each Depot. GhilasB and GhilasSL_PDPT have no limits on the number of outgoing arcs for each depot node.
