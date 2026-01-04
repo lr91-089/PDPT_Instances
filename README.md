@@ -9,3 +9,5 @@ The original instances can be downloaded here (last checked on 04.01.2026): [htt
 
 **GhilasB** and **GhilasSL_PDPT** are new modified benchmarks, where we do not consider a vehicle limit, adapted the request loads to [1,Q_max] and fixed time windows for our model.
 **GhilasB** are based on the PDPTW-T instances of Ghilas et al. 2018 and **GhilasSL_PDPT** are based on the PDPTW-SL instances of Ghilas et al. 2018.
+
+Instance names follow the format **R[requests]-K[vehicles]-T[transfers]-ID**. For example, **R20-K3-T2-1** indicates an instance with 20 requests, 3 vehicles, 2 transfer locations, and instance ID 1.
